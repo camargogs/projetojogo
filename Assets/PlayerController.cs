@@ -34,7 +34,8 @@ public class PlayerController : MonoBehaviour {
 		float h = Input.GetAxisRaw("Horizontal");
 		anim.SetFloat("Velocidade", Mathf.Abs(h));
 
-		rb.velocity = new Vector2( h * speed, rb.velocity.y);
+		rb.velocity = new Vector2( h * speed , rb.velocity.y);
+	
 		if(h > 0 && !facingRight){
 			flip();
 		} 	
